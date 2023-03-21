@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0854431C29C2F889002DE41A /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854431B29C2F889002DE41A /* SchoolViewModel.swift */; };
-		0854431E29C2FE8E002DE41A /* SchoolDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854431D29C2FE8E002DE41A /* SchoolDetailViewModel.swift */; };
+		0854431E29C2FE8E002DE41A /* SchoolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854431D29C2FE8E002DE41A /* SchoolViewModel.swift */; };
 		0854432529C3A1B2002DE41A /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854432429C3A1B2002DE41A /* School.swift */; };
 		0854432729C3A1F5002DE41A /* SchoolDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854432629C3A1F5002DE41A /* SchoolDetailModel.swift */; };
-		0854432C29C3A2DF002DE41A /* SchoolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854432B29C3A2DF002DE41A /* SchoolRow.swift */; };
 		0854432F29C3A3CE002DE41A /* SchoolScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854432E29C3A3CE002DE41A /* SchoolScreen.swift */; };
 		0854433329C3A56F002DE41A /* SchoolDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854433229C3A56F002DE41A /* SchoolDetailScreen.swift */; };
 		0854433829C3A6F4002DE41A /* UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0854433729C3A6F4002DE41A /* UIHelpers.swift */; };
@@ -22,11 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0854431B29C2F889002DE41A /* SchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModel.swift; sourceTree = "<group>"; };
-		0854431D29C2FE8E002DE41A /* SchoolDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailViewModel.swift; sourceTree = "<group>"; };
+		0854431D29C2FE8E002DE41A /* SchoolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolViewModel.swift; sourceTree = "<group>"; };
 		0854432429C3A1B2002DE41A /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		0854432629C3A1F5002DE41A /* SchoolDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailModel.swift; sourceTree = "<group>"; };
-		0854432B29C3A2DF002DE41A /* SchoolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRow.swift; sourceTree = "<group>"; };
 		0854432E29C3A3CE002DE41A /* SchoolScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolScreen.swift; sourceTree = "<group>"; };
 		0854433229C3A56F002DE41A /* SchoolDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailScreen.swift; sourceTree = "<group>"; };
 		0854433729C3A6F4002DE41A /* UIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelpers.swift; sourceTree = "<group>"; };
@@ -57,39 +53,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0854432A29C3A2BF002DE41A /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-				0854432B29C3A2DF002DE41A /* SchoolRow.swift */,
-			);
-			path = CustomViews;
-			sourceTree = "<group>";
-		};
 		0854432D29C3A390002DE41A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				0854433529C3A6B8002DE41A /* SchoolDetailScreen */,
-				0854433429C3A69C002DE41A /* SchoolScreen */,
+				0854432E29C3A3CE002DE41A /* SchoolScreen.swift */,
+				0854433229C3A56F002DE41A /* SchoolDetailScreen.swift */,
+				0854431D29C2FE8E002DE41A /* SchoolViewModel.swift */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		0854433429C3A69C002DE41A /* SchoolScreen */ = {
-			isa = PBXGroup;
-			children = (
-				0854431B29C2F889002DE41A /* SchoolViewModel.swift */,
-				0854432E29C3A3CE002DE41A /* SchoolScreen.swift */,
-			);
-			path = SchoolScreen;
-			sourceTree = "<group>";
-		};
-		0854433529C3A6B8002DE41A /* SchoolDetailScreen */ = {
-			isa = PBXGroup;
-			children = (
-				0854431D29C2FE8E002DE41A /* SchoolDetailViewModel.swift */,
-				0854433229C3A56F002DE41A /* SchoolDetailScreen.swift */,
-			);
-			path = SchoolDetailScreen;
 			sourceTree = "<group>";
 		};
 		0854433629C3A6DE002DE41A /* Utilities */ = {
@@ -121,7 +92,6 @@
 			children = (
 				0854433629C3A6DE002DE41A /* Utilities */,
 				0854432D29C3A390002DE41A /* Screens */,
-				0854432A29C3A2BF002DE41A /* CustomViews */,
 				0854432329C3A17B002DE41A /* Model */,
 				08AF55C329C279BA00A348E2 /* SwiftUITestApp.swift */,
 				08AF55C529C279BA00A348E2 /* ContentView.swift */,
@@ -209,11 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0854431C29C2F889002DE41A /* SchoolViewModel.swift in Sources */,
 				0854433829C3A6F4002DE41A /* UIHelpers.swift in Sources */,
-				0854431E29C2FE8E002DE41A /* SchoolDetailViewModel.swift in Sources */,
+				0854431E29C2FE8E002DE41A /* SchoolViewModel.swift in Sources */,
 				08AF55C629C279BA00A348E2 /* ContentView.swift in Sources */,
-				0854432C29C3A2DF002DE41A /* SchoolRow.swift in Sources */,
 				0854432529C3A1B2002DE41A /* School.swift in Sources */,
 				0854432F29C3A3CE002DE41A /* SchoolScreen.swift in Sources */,
 				0854432729C3A1F5002DE41A /* SchoolDetailModel.swift in Sources */,

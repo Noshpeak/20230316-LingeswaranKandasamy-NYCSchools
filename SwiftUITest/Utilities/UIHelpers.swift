@@ -24,7 +24,6 @@ struct TextView: View {
 }
 
 
-
 struct ResizableImage: View {
     let systemName: String
     let color: Color
@@ -45,5 +44,30 @@ struct RoundedRectangleView: View {
             .foregroundColor(.gray)
             .frame(height: 1)
             .padding(.vertical)
+    }
+}
+
+
+struct SearchBar: View {
+    @Binding var text: String
+    
+    var body: some View {
+        HStack {
+            TextField("Search", text: $text)
+                .padding(.horizontal, 10)
+            
+            if !text.isEmpty {
+                Button(action: {
+                    text = ""
+                }) {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundColor(.gray)
+                }
+                .buttonStyle(BorderlessButtonStyle())
+            }
+        }
+        .frame(height: 40)
+        .background(Color(.systemGray5))
+        .cornerRadius(8)
     }
 }
